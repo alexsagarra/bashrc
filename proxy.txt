@@ -1,0 +1,22 @@
+### Proxy Script
+# --------------------------------------------------------
+setproxy() {
+#export http_proxy="http://host:port"
+#export https_proxy="http://host:port"
+#export HTTP_PROXY="http://host:port"
+#export HTTPS_PROXY="http://host:port"
+}
+
+unsetproxy() {
+unset http_proxy
+unset https_proxy
+unset HTTP_PROXY
+unset HTTPS_PROXY
+}
+
+showproxy() {
+echo "http: $http_proxy"
+echo "https: $https_proxy"
+echo "HTTP: $HTTP_PROXY"
+echo "HTTPS: $HTTPS_PROXY"
+}
