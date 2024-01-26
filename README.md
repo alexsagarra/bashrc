@@ -1,5 +1,19 @@
 ## Add contend / aliases to .bashrc
 
+My little script to add my favortite bashrc settings to new bashrc's.
+Safe your bashrc favortites in your git account.
+So you can add always add your favortites to any new -bashrc.
+
+## Info
+
+create a new file and add some contend for the bashrc file.
+
+```bash
+touch mycontend.txt
+echo "alias up='sudo apt update && sudo apt upgrade'" > mycontend.txt
+./add2bashrc.sh mycontend.txt
+```
+
 ## script
 
 add all contend from file to the .bashrc
