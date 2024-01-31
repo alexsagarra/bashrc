@@ -52,6 +52,7 @@ alias dclogs='docker-compose logs -t -f --tail'
 ### GIT Alias
 # --------------------------------------------------------
 alias gpull='git pull'
+alias gp='git pull'
 alias gpush='git push'
 alias gs="git status"
 alias gc='git commit -m "'
