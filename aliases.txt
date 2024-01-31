@@ -62,7 +62,7 @@ alias ggraph='git log --graph --oneline --decorate --all'
 alias glog='git log --graph --oneline --full-history --decorate --all'
 alias gac='git add . && git commit -m "🩹 Simple fix for a non-critical issue."'
 alias gacp='git add . && git commit -m "🩹 Simple fix for a non-critical issue." && git push'
-alias gacfp='git add . && git commit -m "🧵 $(curl -sk whatthecommit.com/index.txt)" && git push'
+alias gacfp='git add . && git commit -m "🧵 $(curl -s https://whatthecommit.com/index.txt)" && git push'
 alias gcname='git config user.name “Alexander Sagarra”'
 alias gcmail='git config user.email “alex@sagarra.net”'
 
