@@ -37,6 +37,7 @@ alias db='docker build -t <image_name>'
 alias dlogin='docker login -u <username>'
 alias dss='systemctl status docker'
 alias dsp='docker system prune'
+alias dlist='docker ps --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}}\t{{.Command}}\t{{.Ports}}"'
 
 ### Docker Compose
 # --------------------------------------------------------
