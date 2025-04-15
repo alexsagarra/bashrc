@@ -1,10 +1,14 @@
 ### Proxy Script
 # --------------------------------------------------------
+
+export myproxy=""
+
 setproxy() {
-#export http_proxy="http://host:port"
-#export https_proxy="http://host:port"
-#export HTTP_PROXY="http://host:port"
-#export HTTPS_PROXY="http://host:port"
+export http_proxy=$myproxy
+export https_proxy=$myproxy
+export HTTP_PROXY=$myproxy
+export HTTPS_PROXY=$myproxy
+export no_proxy="localhost,migros.ch,migros.cloud,migros.net,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,163.161.0.0/16,164.14.0.0/16,143.180.0.0/16,146.67.0.0/16"
 }
 
 unsetproxy() {
@@ -12,6 +16,7 @@ unset http_proxy
 unset https_proxy
 unset HTTP_PROXY
 unset HTTPS_PROXY
+unset no_proxy
 }
 
 showproxy() {
@@ -19,4 +24,6 @@ echo "http: $http_proxy"
 echo "https: $https_proxy"
 echo "HTTP: $HTTP_PROXY"
 echo "HTTPS: $HTTPS_PROXY"
+echo "noProxy: $no_proxy"
+
 }
